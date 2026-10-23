@@ -196,7 +196,7 @@ def login():
             session["user_id"], session["user"] = user["id"], user["username"]
             return redirect(url_for("dashboard"))
         flash("Wrong username or password.", "error")
-    return render_template("login.html")
+    return render_template("Login.html")
 
 
 @app.route("/logout", methods=["POST"])
